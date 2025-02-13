@@ -1,0 +1,256 @@
+:root {
+    --gap-scale-factor: 250;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    margin: 0;
+    padding: 75px 0;
+    background: linear-gradient(#ffffff, #f9d6d6);
+    font-family: "Steph", sans-serif;
+    min-height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
+
+@font-face {
+    font-family: "Steph";
+    src: url("assets/fonts/steph-font.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Steph";
+    src: url("assets/fonts/steph-font-bold.ttf");
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#togepi-gif {
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 50px auto;
+    transition: all 0.3s ease;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 75px;
+}
+
+button {
+    border-radius: 8px;
+    min-width: 100px;
+    max-width: 550px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    white-space: nowrap;
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: transform 0.1s ease;
+}
+
+button:hover {
+    scale: 1.05;
+}
+
+#yes-btn {
+    transform-origin: center top;
+    color: white;
+    background-color: #57915e;
+    transition: all 0.3s ease;
+}
+
+#no-btn {
+    color: white;
+    background-color: #db4e4e;
+    transition: all 0.3s ease;
+}
+
+#togepi-gif, h1, #yes-btn, #no-btn {
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 1150px) {
+:root {
+    --gap-scale-factor: 200;
+}
+
+body {
+    padding-top: 70px;
+}
+.container {
+    max-width: 100%;
+    margin: 0;
+}
+
+#togepi-gif {
+    width: 380px;
+    height: 304px;
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 50px auto;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    border-radius: 8px;
+    min-width: 100px;
+    max-width: 400px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 12px;
+    white-space: nowrap;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: transform 0.1s ease;
+}
+}
+
+@media (max-width: 600px) {
+:root {
+    --gap-scale-factor: 50;
+}
+body {
+    padding-top: 100px;
+}
+.container {
+    max-width: 100%;
+    margin: 0;
+}
+
+#togepi-gif {
+    width: 300px;
+    height: 240px;
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 1.4rem;
+    margin: 32px auto;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    border-radius: 8px;
+    min-width: 60px;
+    max-width: 175px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 12px;
+    white-space: nowrap;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: transform 0.1s ease;
+}
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        min-height: 100vh;
+    }
+    
+    .container {
+        gap: 25px;
+    }
+    
+    h1 {
+        font-size: 1.6rem;
+        line-height: 1.4;
+        margin: 0;
+        padding: 0 10px;
+        text-align: center;
+    }
+    
+    #togepi-gif {
+        width: 250px;
+        height: 200px;
+        object-fit: cover;
+        margin: 0;
+    }
+    
+    .btn-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-top: 10px;
+    }
+    
+    button {
+        font-size: 1.1rem;
+        padding: 12px 35px;
+        min-width: 120px;
+        border-radius: 25px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+}
+
+.btn {
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+}
+
+* {
+    transition: all 0.3s ease;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+button {
+    font-family: "Steph", sans-serif;
+    letter-spacing: 0.5px;
+}
+
+#togepi-gif, h1, button {
+    transform-origin: center center;
+}  
